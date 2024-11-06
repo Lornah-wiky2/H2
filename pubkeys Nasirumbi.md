@@ -110,4 +110,8 @@ Private keys are used for decryption and creating signatures
 https://linuxsecurity.com/features/pgp-key-signing-observations-overlooked-social-and-technical-considerations 
 
 ### f) Password management. Demonstrate use of a password manager. What kind of attacks take advantage of people not using password managers? (You can use any password manager, some examples include pass and KeePassXC.)
+I am familiar with 1 password.
+When using 1Password as a password manager, I created a strong master password to secure my vault and used 1Password to generate and store unique, complex passwords for each of my online accounts. 
+When logging into my email, I click the 1Password browser extension, which automatically fills in my credentials. As I create new accounts or update existing ones, 1Password seamlessly generates and saves strong passwords, eliminating the need for me to remember multiple complex passwords or resort to using weak, repetitive ones. 
+This reduces my vulnerability to common password-related attacks such as credential stuffing, dictionary attacks, and brute-force attempts.
 
