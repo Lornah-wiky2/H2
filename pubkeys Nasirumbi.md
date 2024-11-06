@@ -87,6 +87,15 @@ To correct this and grant sudo access to the default user: However, getting the 
 <img width="639" alt="trying to fix error of user name not found in sudoers getting this when i try to edit in root" src="https://github.com/user-attachments/assets/59cce396-c43c-43b9-a07f-8e238d2c0c44">
 
 ### c) Other tool. Encrypt a message using a tool other than PGP. Explain how different parties use different keys at different stages of operation. Evaluate the security of the tool you've chosen.
+I will briefly talk about signal. 
+Signal, is a popular secure messaging application. it uses the Signal Protocol, which provides end-to-end encryption for messages, voice calls, and video calls.
+Signal encrypts messages using different keys for each user. When i send a message, my app creates a unique secret key by combining my private key with the recipient's public key. It then uses this secret key to encrypt the message. The recipient's app does the reverse process to decrypt it. This method ensures only the intended recipient can read the message, even if someone intercepts it. Signal is considered very secure because it uses strong encryption and doesn't store messages or keys on its servers.
+
+![signal](https://github.com/user-attachments/assets/82d6a090-1108-48d8-b76d-2641434ff833)
+
+### Reference 
+https://signal.org/blog/signal-inside-and-out/
+
 ### d) Eve and Mallory. In many crypto stories, Eve is a passive eavesdropper, listening on the wire. Mallory maliciously modifies the messages. Explain how PGP protects against Mallory and Eve. Be specific about what features, which use of keys, and which flags in the command are related to this protection. (This subtasks does not require tests with a computer)
 PGP (Pretty Good Privacy) protects against both passive eavesdroppers like Eve and active attackers like Mallory through a combination of encryption, digital signatures, and key management. Let's examine how PGP defends against these threats:
 
