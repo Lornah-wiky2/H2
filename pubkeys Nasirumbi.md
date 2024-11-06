@@ -1,4 +1,4 @@
-# Read and summarize (with some bullet points)
+# PUBKEYS
 ### € Schneier 2015: Applied Cryptography:
 #### Protocol Building Blocks
  ### Communications Using Public-Key Cryptography
