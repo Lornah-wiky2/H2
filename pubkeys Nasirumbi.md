@@ -74,17 +74,23 @@ Every time someone accesses a website using HTTPS (which is now the standard for
 When the browser connects to a website, the server sends its public key as part of its SSL/TLS certificate. It then generates a random symmetric session key and encrypts it using the server's public key. Once the server decrypts the session key using its private key, all further communication is encrypted using this shared symmetric key.
 
 ### b) Messaging. Send an encrypted and signed message using PGP, then verify and decrypt it. (You can use folders to simulate users, or use two computers or two different OS users. Don't use Tero as a name of any party, unless that's your given name.)
-I am getting multiple errors. Nothing seems to work. 
+Generated Lornah´s key pair (public and secret key created and signed) 
+![h2 created public key](https://github.com/user-attachments/assets/be10cb88-2e76-4e99-8598-d051edea4daa)
 
-<img width="637" alt="user not in sudoer file" src="https://github.com/user-attachments/assets/b92f6fb0-dbb0-455e-b931-a1b5de956ab6">
+exported my public key
 
-I tried to fix this by doing the following.
+created a directory called connie and gave her rights to read write and excecute.
+![h2 gave connie rights to rwx and her own settings](https://github.com/user-attachments/assets/7fc90d8e-94db-4eb7-9df7-700f1e1fb4d0)
 
-![as root](https://github.com/user-attachments/assets/5476d60c-1da7-4e5e-beba-f5cf2437bb2a)
+Trust is established between Lornah and connie 
+![trust established we have signed connies key](https://github.com/user-attachments/assets/20a44518-8a92-44b4-bc48-f9d7d86f083d)
 
-To correct this and grant sudo access to the default user: However, getting the error 
+Lornah created an encrypted message and sent it to Connie
+![h2 connie´s secret message, incrypted , signed and ASCII armored](https://github.com/user-attachments/assets/8b907f79-18c3-4efe-b317-544bc72fafa3)
 
-<img width="639" alt="trying to fix error of user name not found in sudoers getting this when i try to edit in root" src="https://github.com/user-attachments/assets/59cce396-c43c-43b9-a07f-8e238d2c0c44">
+connie decrypts and verifies the message 
+![h2 connie´s decrypted message](https://github.com/user-attachments/assets/61beb682-cace-4df9-a721-3d9d74583227)
+
 
 ### c) Other tool. Encrypt a message using a tool other than PGP. Explain how different parties use different keys at different stages of operation. Evaluate the security of the tool you've chosen.
 I will briefly talk about signal. 
@@ -124,3 +130,4 @@ When using 1Password as a password manager, I created a strong master password t
 When logging into my email, I click the 1Password browser extension, which automatically fills in my credentials. As I create new accounts or update existing ones, 1Password seamlessly generates and saves strong passwords, eliminating the need for me to remember multiple complex passwords or resort to using weak, repetitive ones. 
 This reduces my vulnerability to common password-related attacks such as credential stuffing, dictionary attacks, and brute-force attempts.
 
+### g) DONE
